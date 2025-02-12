@@ -16,7 +16,7 @@ const BASE_URL = "https://www.shinshu-u.ac.jp/institution/library/";
 const libraries = Object.keys(libraryMap);
 
 // 📌 定期スクレイピング (21:55 JST = 12:55 UTC)
-Deno.cron("update library data", "23 13 * * *", async () => {
+Deno.cron("update library data", "25 13 * * *", async () => {
   console.log("📌 21:55 JST にスクレイピングを開始！");
 
   const results: Record<string, string> = {};
